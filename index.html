@@ -1,23 +1,55 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Formulário contato">
-    <meta name="keywords" content="Formulário, API, Contato">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Formulário contato" />
+    <meta name="keywords" content="Formulário, API, Contato" />
     <title>Contato</title>
-</head>
-<body>  
+  </head>
+  <body>
     <section>
-        <h2>Contato</h2>
-        <form action="">
-            <label for="nome">Nome</label>
-            <input type="text" name="nome" id="nome" placeholder="Digite seu nome" autocomplete="off" required>
-            <label for="email">Email</label>
-            <input type="text" name="email" id="email" placeholder="Digite seu email" autocomplete="off" required>
-            <label for="mensagem">Mensagem</label>
-            <input type="text" name="mensagem" id="mensagem" placeholder="Digite a sua mensagem" required>
-        </form>
+      <h2>Contato</h2>
+      <form action="">
+        <label for="nome">Nome</label>
+        <input
+          type="text"
+          name="nome"
+          id="nome"
+          placeholder="Digite seu nome"
+          autocomplete="off"
+          required
+        />
+        <label for="email">Email</label>
+        <input
+          type="text"
+          name="email"
+          id="email"
+          placeholder="Digite seu email"
+          autocomplete="off"
+          required
+        />
+        <label for="mensagem">Mensagem</label>
+        <textarea
+          name="mensagem"
+          id="mensagem"
+          cols="30"
+          rows="10"
+          placeholder="Digite sua mensagem"
+          required
+        ></textarea>
+
+        <input
+          type="hidden"
+          name="accessKey"
+          value="50b118e3-9339-4c55-8891-70d072a3fa69"
+        />
+        <input
+          type="hidden"
+          name="redirectTo"
+          value="http://127.0.0.1:5501/obrigado.html"
+        />
+      </form>
     </section>
-</body>
+  </body>
 </html>

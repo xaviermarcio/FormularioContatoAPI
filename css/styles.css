@@ -1,0 +1,144 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+:root {
+    --color-white : #fff;
+    --color-yellow:  #f1f6ce;
+    --color-blue:  #0d0f36;
+    --color-blue2:  #294380;
+    --color-green:  #69d2cd;
+    --color-green2:  #b9f1d6;
+}
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: var(--color-blue);
+}
+
+section{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 10px 45px;
+    background: var(--color-blue2);
+    width: 500px;
+    box-shadow: 0 2px 5px var(--color-white, 45, 43, 43, 0.3);
+}
+
+section h2{
+    color: var(--color-white);
+    font-size: 2.5rem;
+    margin: 2rem;
+}
+
+section form{
+    color: var(--color-white);
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+form label{
+    font-size: 17px;
+    margin-bottom: 4px;
+}
+
+form input{
+    padding: 15px;
+    outline: none;
+    border: 0;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    font-size: 15px;
+    transition:  all 0.5s;
+}
+
+form input:focus{
+    border-radius: 16px;
+}
+
+form textarea{
+    padding: 10px;
+    outline: none;
+    border: 0;
+    font-size: 15px;
+    margin-bottom: 30px;
+    transition: all 0.5s;
+}
+
+form textarea:focus{
+    border-radius: 16px;
+}
+
+form button{
+    padding: 15px;
+    cursor: pointer;
+    font-size: 16px;
+    background: transparent;
+    border: 2px solid var(--color-yellow);
+    border-radius: 5px;
+    color: var(--color-white);
+    transition: all 1s;
+    margin-bottom: 20px;
+}
+
+form button:hover{
+    background: var(--color-yellow);
+    color: var(--color-blue);
+}
+
+/*Página do Obrigado*/
+
+.main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: var(--color-blue);
+    flex-direction: column;
+}
+
+.main h1{
+    color: var(--color-yellow);
+    font-size: 50px;
+}
+
+text{
+    font-size: 50px;
+    color: var(--color-white);
+    margin-bottom: 50px;
+}
+
+.paragrafo{
+    color: var(--color-white);
+    font-size: 30px;
+}
+
+.btn{
+    padding: 15px 55px;
+    background: transparent;
+    border: 2px solid var(--color-yellow);
+    text-decoration: none;
+    color: var(--color-white);
+    font-size: 18px;
+    border-radius: 5px;
+    transition:  all 0.5s;
+}
+
+.btn:hover{
+    letter-spacing: 4px;
+    border-radius: 7px;
+    font: bolder;
+    font-size: 18px;
+    border: 1px solid var(--color-white);
+    background: var(--color-yellow);
+    color: var(--color-blue);
+}

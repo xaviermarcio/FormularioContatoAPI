@@ -12,6 +12,8 @@
     --color-blue2: #294380;
     --color-green: #69d2cd;
     --color-green2: #b9f1d6;
+    --color-error: #eb1515;
+    --color-success: #05a039;
 }
 
 body {
@@ -28,19 +30,19 @@ section {
     justify-content: center;
     flex-direction: column;
     padding: 10px 45px;
-    background: var(--color-blue2);
+    background: var(--color-yellow);
     width: 500px;
     box-shadow: 0 2px 5px var(--color-white, 45, 43, 43, 0.3);
 }
 
 section h2 {
-    color: var(--color-white);
+    color: var(--color-blue);
     font-size: 2.5rem;
     margin: 2rem;
 }
 
 section form {
-    color: var(--color-white);
+    color: var(--color-blue);
     display: flex;
     flex-direction: column;
     width: 100%;
@@ -55,14 +57,14 @@ form input {
     padding: 15px;
     outline: none;
     border: 0;
-    border-radius: 5px;
     margin-bottom: 20px;
     font-size: 15px;
     transition: all 0.5s;
 }
 
 form input:focus {
-    border-radius: 16px;
+    border-radius: 10px;
+    box-shadow: 0 0 8px var(--color-blue);
 }
 
 form textarea {
@@ -75,7 +77,8 @@ form textarea {
 }
 
 form textarea:focus {
-    border-radius: 16px;
+    border-radius: 10px;
+    box-shadow: 0 0 8px var(--color-blue);
 }
 
 form button {
@@ -83,16 +86,17 @@ form button {
     cursor: pointer;
     font-size: 16px;
     background: transparent;
-    border: 2px solid var(--color-yellow);
+    border: 2px solid var(--color-blue);
     border-radius: 5px;
-    color: var(--color-white);
+    color: var(--color-blue);
     transition: all 1s;
     margin-bottom: 20px;
 }
 
 form button:hover {
-    background: var(--color-yellow);
-    color: var(--color-blue);
+    background: var(--color-blue2);
+    color: var(--color-white);
+    letter-spacing: 2px;
 }
 
 /*Página do Obrigado*/
@@ -142,3 +146,23 @@ text {
     background: var(--color-yellow);
     color: var(--color-blue);
 }
+
+/*Mensagem de erro*/
+
+.error {
+    border: 2px solid var(--color-error);
+}
+
+.success {
+    border: 2px solid var(--color-success);
+}
+
+.error-message {
+    color: var(--color-error);
+    margin-top: -10px;
+}
+
+.messageError{
+   margin: 10px;
+}
+

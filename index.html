@@ -10,48 +10,51 @@
   </head>
   <body>
     <section>
-      <h2>Contato</h2>
-      <form action="https://api.staticforms.xyz/submit" method="POST">
-        <label for="name">Nome</label>
-        <input
-          type="text"
-          name="name"
-          id="nome"
-          placeholder="Digite seu nome"
-          autocomplete="off"
-          required
-        />
-        <label for="email">Email</label>
-        <input
-          type="text"
-          name="email"
-          id="email"
-          placeholder="Digite seu email"
-          autocomplete="off"
-          required
-        />
-        <label for="message">Mensagem</label>
-        <textarea
-          name="message"
-          id="message"
-          cols="30"
-          rows="10"
-          placeholder="Digite sua mensagem"
-          required
-        ></textarea>
-        <button type="submit" value="Submit">Enviar</button>
+        <h2>Contato</h2>
+        <form id="contactForm" action="https://api.staticforms.xyz/submit" method="POST" onsubmit="return validateForm()">
+            <label for="name">Nome</label>
+            <input
+                type="text"
+                name="name"
+                id="name"
+                placeholder="Digite seu nome"
+                autocomplete="off"
+                oninput="validateForm()"
+            />
+            <span id="nameError" class="error-message" style="display: none;">Nome é obrigatório.</span>
+            <label for="email">Email</label>
+            <input
+                type="text"
+                name="email"
+                id="email"
+                placeholder="Digite seu email"
+                autocomplete="off"
+                oninput="validateForm()"
+            />
+            <span id="emailError" class="error-message" style="display: none;">Email é obrigatório e deve ser válido.</span>
+            <label for="message">Mensagem</label>
+            <textarea
+                name="message"
+                id="message"
+                cols="30"
+                rows="10"
+                placeholder="Digite sua mensagem"
+                oninput="validateForm()"
+            ></textarea>
+            <span id="messageError" class="error-message" style="display: none;">Mensagem é obrigatória.</span>
+            <button type="submit" value="Submit">ENVIAR</button>
 
-        <input
-          type="hidden"
-          name="accessKey"
-          value="50b118e3-9339-4c55-8891-70d072a3fa69"
-        />
-        <input
-          type="hidden"
-          name="redirectTo"
-          value="http://127.0.0.1:5501/FormularioContatoAPI/obrigado.html"
-        />
-      </form>
+            <input
+                type="hidden"
+                name="accessKey"
+                value="50b118e3-9339-4c55-8891-70d072a3fa69"
+            />
+            <input
+                type="hidden"
+                name="redirectTo"
+                value="http://127.0.0.1:5501/FormularioContatoAPI/obrigado.html"
+            />
+        </form>
     </section>
 
     <script src="js/formulario_contato.js"></script>

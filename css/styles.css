@@ -6,15 +6,15 @@
 }
 
 :root {
-    --color-white : #fff;
-    --color-yellow:  #f1f6ce;
-    --color-blue:  #0d0f36;
-    --color-blue2:  #294380;
-    --color-green:  #69d2cd;
-    --color-green2:  #b9f1d6;
+    --color-white: #fff;
+    --color-yellow: #f1f6ce;
+    --color-blue: #0d0f36;
+    --color-blue2: #294380;
+    --color-green: #69d2cd;
+    --color-green2: #b9f1d6;
 }
 
-body{
+body {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -22,7 +22,7 @@ body{
     background: var(--color-blue);
 }
 
-section{
+section {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -33,39 +33,39 @@ section{
     box-shadow: 0 2px 5px var(--color-white, 45, 43, 43, 0.3);
 }
 
-section h2{
+section h2 {
     color: var(--color-white);
     font-size: 2.5rem;
     margin: 2rem;
 }
 
-section form{
+section form {
     color: var(--color-white);
     display: flex;
     flex-direction: column;
     width: 100%;
 }
 
-form label{
+form label {
     font-size: 17px;
     margin-bottom: 4px;
 }
 
-form input{
+form input {
     padding: 15px;
     outline: none;
     border: 0;
     border-radius: 5px;
     margin-bottom: 20px;
     font-size: 15px;
-    transition:  all 0.5s;
+    transition: all 0.5s;
 }
 
-form input:focus{
+form input:focus {
     border-radius: 16px;
 }
 
-form textarea{
+form textarea {
     padding: 10px;
     outline: none;
     border: 0;
@@ -74,11 +74,11 @@ form textarea{
     transition: all 0.5s;
 }
 
-form textarea:focus{
+form textarea:focus {
     border-radius: 16px;
 }
 
-form button{
+form button {
     padding: 15px;
     cursor: pointer;
     font-size: 16px;
@@ -90,14 +90,14 @@ form button{
     margin-bottom: 20px;
 }
 
-form button:hover{
+form button:hover {
     background: var(--color-yellow);
     color: var(--color-blue);
 }
 
 /*Página do Obrigado*/
 
-.main{
+.main {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -106,23 +106,23 @@ form button:hover{
     flex-direction: column;
 }
 
-.main h1{
+.main h1 {
     color: var(--color-yellow);
     font-size: 50px;
 }
 
-text{
+text {
     font-size: 50px;
     color: var(--color-white);
     margin-bottom: 50px;
 }
 
-.paragrafo{
+.paragrafo {
     color: var(--color-white);
     font-size: 30px;
 }
 
-.btn{
+.btn {
     padding: 15px 55px;
     background: transparent;
     border: 2px solid var(--color-yellow);
@@ -130,10 +130,10 @@ text{
     color: var(--color-white);
     font-size: 18px;
     border-radius: 5px;
-    transition:  all 0.5s;
+    transition: all 0.5s;
 }
 
-.btn:hover{
+.btn:hover {
     letter-spacing: 4px;
     border-radius: 7px;
     font: bolder;

@@ -21,7 +21,7 @@ API staticforms:  Abaixo exemplo de como consumir a API taticforms
  Exemplo: "<input type="hidden" name="accessKey" value="52b118e3-9439-4c55-8891-70d072b3fa69">"
 
 ## Aprendizados
-O Mais importante é saber consumir uma API
+O Mais importante aprender a consumir uma API
 
 ## Feedback
 Se você tiver algum feedback, por favor nos deixe saber por meio de xaviermarcio80@gmail.com
